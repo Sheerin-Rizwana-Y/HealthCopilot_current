@@ -1,0 +1,27 @@
+{
+  "mode": "verify",
+  "created_at_utc": "20261020T163206Z",
+  "patient_id": "demo_patient",
+  "results": [
+    {
+      "case": "cough",
+      "question": "Which of this demo patient's medical reports mention cough? What does the retrieved MedlinePlus reference explain about cough? Keep patient facts and general information separate, citing both.",
+      "status": "PASS",
+      "issues": [],
+      "latency_seconds": 11.09,
+      "answer": null
+    },
+    {
+      "case": "dizziness",
+      "question": "Which of this demo patient's reports mention dizziness? What does the retrieved MedlinePlus reference explain about dizziness or vertigo? Cite patient and general sources separately.",
+      "status": "PASS",
+      "issues": [],
+      "latency_seconds": 9.99,
+      "answer": null
+    }
+  ],
+  "passed": 2,
+  "total": 2,
+  "average_wall_seconds": 10.54,
+  "limitation": "Only synthetic fixture and citation/source-type checks"
+}

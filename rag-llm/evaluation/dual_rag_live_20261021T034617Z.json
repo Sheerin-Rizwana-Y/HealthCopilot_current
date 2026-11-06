@@ -1,0 +1,27 @@
+{
+  "mode": "live",
+  "created_at_utc": "20261021T034617Z",
+  "patient_id": "demo_patient",
+  "results": [
+    {
+      "case": "cough",
+      "question": "Which of this demo patient's medical reports mention cough? What does the retrieved MedlinePlus reference explain about cough? Keep patient facts and general information separate, citing both.",
+      "status": "PASS",
+      "issues": [],
+      "latency_seconds": 26.8,
+      "answer": "**Patient‑report findings**  \n- The report with reference P1 documents that the patient had a cough (and headache). [P1]  \n- The report with reference P2 documents dizziness and tiredness, with no mention of cough. [P2]  \n- The report with reference P3 documents dizziness and nausea, with no mention of cough. [P3]  \n\n**General medical information**  \n- MedlinePlus explains that coughing is a protective reflex that helps keep the throat and airways clear. A cough can be short‑lived or persistent and may be caused by infections or allergies; a mention of cough in a report does not constitute a diagnosis. [M1]"
+    },
+    {
+      "case": "dizziness",
+      "question": "Which of this demo patient's reports mention dizziness? What does the retrieved MedlinePlus reference explain about dizziness or vertigo? Cite patient and general sources separately.",
+      "status": "PASS",
+      "issues": [],
+      "latency_seconds": 26.62,
+      "answer": "**Patient-report findings**  \n- Reports of dizziness are documented in the patient’s medical reports P1 and P2.  \n  - P1: “Symptoms: Dizziness and nausea.” [P1]  \n  - P2: “Symptoms: Dizziness and tiredness.” [P2]  \n- Report P3 does not mention dizziness.  \n\n**General medical information**  \n- MedlinePlus explains that dizziness can feel like lightheadedness or unsteadiness, while vertigo involves a sensation of spinning. Possible causes include dehydration, standing up too quickly, some medicines, and inner‑ear problems; the symptom alone does not establish its cause. [M1]"
+    }
+  ],
+  "passed": 2,
+  "total": 2,
+  "average_wall_seconds": 26.71,
+  "limitation": "Synthetic fixtures, source routing and citation syntax only"
+}

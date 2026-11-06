@@ -1,0 +1,165 @@
+{
+  "data_source": "sisfall",
+  "rf_identical_split": true,
+  "test_subjects": [
+    "SA18",
+    "SA16",
+    "SE11",
+    "SE02",
+    "SE04",
+    "SA05"
+  ],
+  "n_test": 4046,
+  "n_test_fall": 225,
+  "n_test_adl": 3821,
+  "rows": {
+    "Random Forest (0.5, as deployed)": {
+      "threshold": 0.5,
+      "n": 4046,
+      "n_fall": 225,
+      "n_adl": 3821,
+      "tp": 218,
+      "tn": 3793,
+      "fp": 28,
+      "fn": 7,
+      "accuracy": 0.9913494809688581,
+      "precision": 0.8861788617886179,
+      "recall": 0.9688888888888889,
+      "sensitivity": 0.9688888888888889,
+      "specificity": 0.992672075372939,
+      "false_positive_rate": 0.007327924627060979,
+      "f1": 0.9256900212314225,
+      "roc_auc": 0.9985437203757016,
+      "pr_auc": 0.978803064278432,
+      "false_alarms_per_hour": 13.19026432870976,
+      "confusion_matrix": [
+        [
+          3793,
+          28
+        ],
+        [
+          7,
+          218
+        ]
+      ]
+    },
+    "Random Forest (val-tuned thr)": {
+      "threshold": 0.825,
+      "n": 4046,
+      "n_fall": 225,
+      "n_adl": 3821,
+      "tp": 204,
+      "tn": 3809,
+      "fp": 12,
+      "fn": 21,
+      "accuracy": 0.9918437963420662,
+      "precision": 0.9444444444444444,
+      "recall": 0.9066666666666666,
+      "sensitivity": 0.9066666666666666,
+      "specificity": 0.9968594608741167,
+      "false_positive_rate": 0.003140539125883277,
+      "f1": 0.9251700680272109,
+      "roc_auc": 0.9985437203757016,
+      "pr_auc": 0.978803064278432,
+      "false_alarms_per_hour": 5.6529704265898975,
+      "confusion_matrix": [
+        [
+          3809,
+          12
+        ],
+        [
+          21,
+          204
+        ]
+      ]
+    },
+    "CNN-LSTM (0.5)": {
+      "threshold": 0.5,
+      "n": 4046,
+      "n_fall": 225,
+      "n_adl": 3821,
+      "tp": 225,
+      "tn": 3821,
+      "fp": 0,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "false_positive_rate": 0.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "false_alarms_per_hour": 0.0,
+      "confusion_matrix": [
+        [
+          3821,
+          0
+        ],
+        [
+          0,
+          225
+        ]
+      ]
+    },
+    "CNN-LSTM (val-tuned thr)": {
+      "threshold": 0.9030670523643494,
+      "n": 4046,
+      "n_fall": 225,
+      "n_adl": 3821,
+      "tp": 224,
+      "tn": 3821,
+      "fp": 0,
+      "fn": 1,
+      "accuracy": 0.9997528423133959,
+      "precision": 1.0,
+      "recall": 0.9955555555555555,
+      "sensitivity": 0.9955555555555555,
+      "specificity": 1.0,
+      "false_positive_rate": 0.0,
+      "f1": 0.9977728285077951,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "false_alarms_per_hour": 0.0,
+      "confusion_matrix": [
+        [
+          3821,
+          0
+        ],
+        [
+          1,
+          224
+        ]
+      ]
+    }
+  },
+  "cost": {
+    "Random Forest": {
+      "file_bytes": 7049261,
+      "size": "7.05 MB",
+      "complexity": "200 trees, 85,198 nodes",
+      "latency": {
+        "mean_ms": 15.452259500161745,
+        "p95_ms": 23.279870004625987,
+        "runs": 200
+      },
+      "latency_note": "features + predict_proba, n_jobs=1, 1 window"
+    },
+    "CNN-LSTM": {
+      "file_bytes": 251353,
+      "size": "0.25 MB",
+      "complexity": "59,745 parameters",
+      "latency": {
+        "mean_ms": 0.8906344999559224,
+        "p95_ms": 1.0723500163294375,
+        "runs": 200
+      },
+      "latency_note": "forward pass on normalised window, 1 window, PyTorch CPU"
+    }
+  },
+  "thresholds": {
+    "Random Forest": 0.825,
+    "CNN-LSTM": 0.9030670523643494
+  }
+}

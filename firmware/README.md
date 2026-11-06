@@ -1,0 +1,7 @@
+# ESP32 alert-output adapter
+
+`esp32_alert_output_adapter.ino` demonstrates how an ESP32 can poll the authenticated `/api/v1/devices/alert-state` endpoint, drive a buzzer plus red/amber/green LEDs, and submit `person_response: true` when a physical check-in button is pressed. The network calls run on a separate FreeRTOS task so they do not block the main sensor/ML loop.
+
+**Do not flash this file as a replacement for your existing sensor/ML firmware.** The actual project firmware and ML artifacts were not present in the integration bundle inspected for this enhancement, so this adapter is not wired into your board's current loop. Merge the pin setup, `liforaNetworkTask`, `liforaPollPersonCheckinButton()` and `liforaUpdateOutputs()` into the existing firmware, keep its sensor collection and ML input/inference path unchanged, and call the two poll/update helpers from its existing loop. Set the host machine's LAN IP, Wi-Fi credentials, device token and patient ID locally; never commit them. Requires ArduinoJson 6.x.
+
+The adapter uses amber when the API/network is unavailable and never turns green without a successful API response. If a critical alarm was already active, it preserves the local critical alarm while the network is down. Verify pin assignments, button wiring, buzzer current, and the exact ESP32 board before connecting hardware. A browser alarm and physical buzzer are separate outputs.

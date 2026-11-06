@@ -1,0 +1,14 @@
+{
+  "patient_id": "demo_patient",
+  "document_id": "8683039076cc8bc6d716583be80974701d3e06f6fcb084cf05bf0eb3de2a4d65",
+  "original_filename": "demo_report.pdf",
+  "stored_report": "report_8683039076cc.pdf",
+  "ingested_at": "2026-10-17T13:40:18.083166+00:00",
+  "page_count": 1,
+  "pages": [
+    {
+      "page": 1,
+      "text": "SYNTHETIC MEDICAL REPORT - TEST ONLY\n\nPatient: Demo Patient\n\nHistory: Previously reported fever.\n\nSymptoms: Dizziness and tiredness.\n\nHeart Rate: 96 bpm\n\nSpO2: 98 percent\n\nTemperature: 37.2 C\n\nNote: This is fictional test data."
+    }
+  ]
+}

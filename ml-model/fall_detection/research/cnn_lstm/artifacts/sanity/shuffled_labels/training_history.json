@@ -1,0 +1,166 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8282907582365122,
+      "train_acc": 0.4872791284708383,
+      "val_loss": 0.7010842475959723,
+      "val_acc": 0.8995203836930455,
+      "val_pr_auc": 0.31475918737612674,
+      "val_f1_at_0p5": 0.36030534351145044,
+      "lr": 0.001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.8280532271149024,
+      "train_acc": 0.4787099774146406,
+      "val_loss": 0.7132494154308053,
+      "val_acc": 0.27577937649880097,
+      "val_pr_auc": 0.03177529527623293,
+      "val_f1_at_0p5": 0.025814778960955145,
+      "lr": 0.001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.8278266956515722,
+      "train_acc": 0.48448917231300653,
+      "val_loss": 0.7147610317888877,
+      "val_acc": 0.194484412470024,
+      "val_pr_auc": 0.03130218008214564,
+      "val_f1_at_0p5": 0.04438122332859175,
+      "lr": 0.001
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.8277674341749762,
+      "train_acc": 0.5045834994021523,
+      "val_loss": 0.7098356820410676,
+      "val_acc": 0.3155875299760192,
+      "val_pr_auc": 0.17184315965308847,
+      "val_f1_at_0p5": 0.0979772439949431,
+      "lr": 0.001
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.8275373243582396,
+      "train_acc": 0.4836588282184137,
+      "val_loss": 0.7144105190567547,
+      "val_acc": 0.1985611510791367,
+      "val_pr_auc": 0.11242116840143682,
+      "val_f1_at_0p5": 0.10354077253218882,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.827515570436703,
+      "train_acc": 0.46715158761790887,
+      "val_loss": 0.7114333461800353,
+      "val_acc": 0.24700239808153476,
+      "val_pr_auc": 0.06374556677770461,
+      "val_f1_at_0p5": 0.07863849765258217,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.8274111802698021,
+      "train_acc": 0.47406005048492095,
+      "val_loss": 0.7101551400957633,
+      "val_acc": 0.5139088729016786,
+      "val_pr_auc": 0.04344434140092225,
+      "val_f1_at_0p5": 0.06890215893431327,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.8272927118532366,
+      "train_acc": 0.4876444798724591,
+      "val_loss": 0.7086843970582354,
+      "val_acc": 0.4565947242206235,
+      "val_pr_auc": 0.061280294876756444,
+      "val_f1_at_0p5": 0.08333333333333333,
+      "lr": 0.00025
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.8272092803487173,
+      "train_acc": 0.5128869403480802,
+      "val_loss": 0.7130950455185321,
+      "val_acc": 0.2642685851318945,
+      "val_pr_auc": 0.0736505137861906,
+      "val_f1_at_0p5": 0.09284447072738025,
+      "lr": 0.00025
+    }
+  ],
+  "best_epoch": 1,
+  "threshold": 0.5006668567657471,
+  "data_source": "sisfall",
+  "config": {
+    "seed": 42,
+    "paths": {
+      "dataset_root": "datasets/sisfall/SisFall_dataset",
+      "rf_features_csv": "datasets/sisfall/sisfall_features.csv",
+      "rf_model": "ml-model/fall_detection/fall_detection_rf.joblib",
+      "prepared_dir": "datasets/sisfall/cnn_lstm_windows",
+      "artifacts_dir": "ml-model/fall_detection/research/cnn_lstm/artifacts"
+    },
+    "data": {
+      "sampling_rate": 200,
+      "window_seconds": 2,
+      "window_size": 400,
+      "channels": [
+        "adxl_x",
+        "adxl_y",
+        "adxl_z",
+        "gyro_x",
+        "gyro_y",
+        "gyro_z"
+      ],
+      "n_val_subjects": 6,
+      "n_test_subjects": 6,
+      "split_seed": 42,
+      "train_adl_stride": 400,
+      "adl_max_windows_per_recording": null,
+      "fall_aug_crops": 8,
+      "fall_aug_margin": 20
+    },
+    "model": {
+      "conv_channels": [
+        32,
+        64,
+        64
+      ],
+      "kernel_sizes": [
+        7,
+        5,
+        3
+      ],
+      "pool_size": 2,
+      "lstm_hidden": 64,
+      "lstm_layers": 1,
+      "bidirectional": false,
+      "fc_hidden": 32,
+      "dropout": 0.3
+    },
+    "training": {
+      "device": "cpu",
+      "batch_size": 64,
+      "max_epochs": 40,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "grad_clip": 1.0,
+      "use_pos_weight": true,
+      "noise_std": 0.02,
+      "early_stopping": {
+        "monitor": "val_pr_auc",
+        "patience": 8,
+        "min_delta": 0.0005
+      },
+      "num_threads": 0,
+      "num_workers": 0
+    },
+    "evaluation": {
+      "latency_runs": 200,
+      "latency_warmup": 20
+    }
+  }
+}

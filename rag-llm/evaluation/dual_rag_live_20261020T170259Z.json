@@ -1,0 +1,31 @@
+{
+  "mode": "live",
+  "created_at_utc": "20261020T170259Z",
+  "patient_id": "demo_patient",
+  "results": [
+    {
+      "case": "cough",
+      "question": "Which of this demo patient's medical reports mention cough? What does the retrieved MedlinePlus reference explain about cough? Keep patient facts and general information separate, citing both.",
+      "status": "ERROR",
+      "issues": [
+        "ValueError: Missing patient report citation."
+      ],
+      "latency_seconds": 22.86,
+      "answer": null
+    },
+    {
+      "case": "dizziness",
+      "question": "Which of this demo patient's reports mention dizziness? What does the retrieved MedlinePlus reference explain about dizziness or vertigo? Cite patient and general sources separately.",
+      "status": "ERROR",
+      "issues": [
+        "ValueError: Missing patient report citation."
+      ],
+      "latency_seconds": 22.48,
+      "answer": null
+    }
+  ],
+  "passed": 0,
+  "total": 2,
+  "average_wall_seconds": 22.67,
+  "limitation": "Only synthetic fixture and citation/source-type checks"
+}

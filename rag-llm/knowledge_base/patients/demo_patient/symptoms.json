@@ -1,0 +1,20 @@
+[
+  {
+    "record_id": "4e525755-1e4e-4229-8f29-301ab0b1cfc3",
+    "patient_id": "demo_patient",
+    "symptom": "dizziness",
+    "severity": "moderate",
+    "onset_at": "2026-10-18T09:00:00+05:30",
+    "recorded_at": "2026-10-18T18:23:51.272473+00:00",
+    "source": "synthetic_caregiver_entry"
+  },
+  {
+    "record_id": "403fc3dd-16ad-407d-a7d6-61422733bcdd",
+    "patient_id": "demo_patient",
+    "symptom": "cough",
+    "severity": "mild",
+    "onset_at": "2026-10-18T11:00:00+05:30",
+    "recorded_at": "2026-10-19T03:48:35.001325+00:00",
+    "source": "synthetic_caregiver_entry"
+  }
+]

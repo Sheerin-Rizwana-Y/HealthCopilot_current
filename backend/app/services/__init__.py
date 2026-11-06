@@ -1,0 +1,1 @@
+"""Lifora FastAPI backend."""

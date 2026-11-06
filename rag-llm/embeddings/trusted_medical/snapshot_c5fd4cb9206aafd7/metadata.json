@@ -1,0 +1,62 @@
+{
+  "index_type": "general_medical_reference_not_patient_data",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimension": 384,
+  "documents": [
+    {
+      "ref_id": "1d8e43119ed10ecb",
+      "topic": "Dizziness and vertigo",
+      "keywords": "dizziness, vertigo, lightheaded, spinning, unsteady, balance",
+      "summary": "Dizziness can feel like lightheadedness or unsteadiness, while vertigo involves a sensation of spinning. Possible causes mentioned in the health-topic overview include dehydration, standing up too quickly, some medicines, and inner-ear problems. The symptom alone does not establish its cause.",
+      "source_url": "https://medlineplus.gov/dizzinessandvertigo.html",
+      "source_name": "MedlinePlus, National Library of Medicine",
+      "reviewed_on": "2026-10-20",
+      "content_type": "manually_curated_paraphrase_of_public_health_topic_summary",
+      "text": "Topic: Dizziness and vertigo. Keywords: dizziness, vertigo, lightheaded, spinning, unsteady, balance. General reference: Dizziness can feel like lightheadedness or unsteadiness, while vertigo involves a sensation of spinning. Possible causes mentioned in the health-topic overview include dehydration, standing up too quickly, some medicines, and inner-ear problems. The symptom alone does not establish its cause."
+    },
+    {
+      "ref_id": "3a00ca8992161086",
+      "topic": "Cough",
+      "keywords": "cough, coughing, acute cough, chronic cough, airways",
+      "summary": "Coughing is a protective reflex that helps keep the throat and airways clear. A cough can be short-lived or persistent and has a variety of possible causes, including infections and allergies. A mention of cough in a report is not a diagnosis.",
+      "source_url": "https://medlineplus.gov/cough.html",
+      "source_name": "MedlinePlus, National Library of Medicine",
+      "reviewed_on": "2026-10-20",
+      "content_type": "manually_curated_paraphrase_of_public_health_topic_summary",
+      "text": "Topic: Cough. Keywords: cough, coughing, acute cough, chronic cough, airways. General reference: Coughing is a protective reflex that helps keep the throat and airways clear. A cough can be short-lived or persistent and has a variety of possible causes, including infections and allergies. A mention of cough in a report is not a diagnosis."
+    },
+    {
+      "ref_id": "a9251fe5d755a33e",
+      "topic": "Headache",
+      "keywords": "headache, head pain, migraine, tension headache",
+      "summary": "Headaches are common and include different types such as tension headaches and migraines. A headache can have different causes, so a report of head pain by itself does not identify the cause.",
+      "source_url": "https://medlineplus.gov/headache.html",
+      "source_name": "MedlinePlus, National Library of Medicine",
+      "reviewed_on": "2026-10-20",
+      "content_type": "manually_curated_paraphrase_of_public_health_topic_summary",
+      "text": "Topic: Headache. Keywords: headache, head pain, migraine, tension headache. General reference: Headaches are common and include different types such as tension headaches and migraines. A headache can have different causes, so a report of head pain by itself does not identify the cause."
+    },
+    {
+      "ref_id": "04254f9d7e3e55cf",
+      "topic": "Nausea and vomiting",
+      "keywords": "nausea, vomiting, sick to stomach, emesis",
+      "summary": "Nausea means feeling sick to the stomach, as if vomiting may occur. It can have many causes, including motion sickness, medicines, and different medical conditions. Its presence alone does not identify the cause.",
+      "source_url": "https://medlineplus.gov/nauseaandvomiting.html",
+      "source_name": "MedlinePlus, National Library of Medicine",
+      "reviewed_on": "2026-10-20",
+      "content_type": "manually_curated_paraphrase_of_public_health_topic_summary",
+      "text": "Topic: Nausea and vomiting. Keywords: nausea, vomiting, sick to stomach, emesis. General reference: Nausea means feeling sick to the stomach, as if vomiting may occur. It can have many causes, including motion sickness, medicines, and different medical conditions. Its presence alone does not identify the cause."
+    },
+    {
+      "ref_id": "99cd41eb2f576332",
+      "topic": "Fatigue and tiredness",
+      "keywords": "fatigue, tiredness, lack of energy, weariness",
+      "summary": "Fatigue is a feeling of tiredness, weariness or lack of energy. It may relate to lifestyle factors, medicines, or physical or mental health conditions. Fatigue is a symptom, not a diagnosis.",
+      "source_url": "https://medlineplus.gov/fatigue.html",
+      "source_name": "MedlinePlus, National Library of Medicine",
+      "reviewed_on": "2026-10-20",
+      "content_type": "manually_curated_paraphrase_of_public_health_topic_summary",
+      "text": "Topic: Fatigue and tiredness. Keywords: fatigue, tiredness, lack of energy, weariness. General reference: Fatigue is a feeling of tiredness, weariness or lack of energy. It may relate to lifestyle factors, medicines, or physical or mental health conditions. Fatigue is a symptom, not a diagnosis."
+    }
+  ]
+}

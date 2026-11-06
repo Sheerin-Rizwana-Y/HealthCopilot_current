@@ -1,0 +1,14 @@
+{
+  "patient_id": "demo_patient",
+  "document_id": "8e0a885a4459a4598f2921a32adae2b292bad07a8e1d419199cb3df1947b4251",
+  "original_filename": "demo_followup_2026-10-10.pdf",
+  "stored_report": "report_8e0a885a4459.pdf",
+  "ingested_at": "2026-10-19T14:40:34.231451+00:00",
+  "page_count": 1,
+  "pages": [
+    {
+      "page": 1,
+      "text": "SYNTHETIC MEDICAL REPORT - TEST ONLY\n\nPatient: Demo Patient\n\nReport Date: 2026-10-10\n\nSymptoms: Cough and headache.\n\nHeart Rate: 88 bpm\n\nSpO2: 99 percent\n\nTemperature: 36.9 C\n\nNote: This is fictional test data."
+    }
+  ]
+}

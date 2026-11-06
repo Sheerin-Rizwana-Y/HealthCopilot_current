@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "patient_id": "demo_patient",
+  "entries": [
+    {
+      "record_id": "591e5d41ff6f9e4bdb7a",
+      "patient_id": "demo_patient",
+      "category": "condition",
+      "name": "Seasonal allergies",
+      "details": "Fictional caregiver-reported condition; not clinically verified.",
+      "reported_on": "2026-10-12",
+      "source": "synthetic_caregiver_entry",
+      "verification_status": "unverified",
+      "created_at": "2026-10-20T04:50:03.984058+00:00"
+    },
+    {
+      "record_id": "f04adc6a7b0f9219c4f3",
+      "patient_id": "demo_patient",
+      "category": "diagnosis",
+      "name": "Migraine",
+      "details": "Fictional reported diagnosis; no confirming document supplied.",
+      "reported_on": "2026-10-12",
+      "source": "synthetic_caregiver_entry",
+      "verification_status": "unverified",
+      "created_at": "2026-10-20T04:50:03.984166+00:00"
+    },
+    {
+      "record_id": "ab489c4e6f6ba80ed3d7",
+      "patient_id": "demo_patient",
+      "category": "medication",
+      "name": "Cetirizine",
+      "details": "Fictional medication entry; dose and schedule unknown.",
+      "reported_on": "2026-10-12",
+      "source": "synthetic_caregiver_entry",
+      "verification_status": "unverified",
+      "created_at": "2026-10-20T04:50:03.984179+00:00"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+# CNN-LSTM fall detection (RESEARCH model) - configuration.
+# All paths are relative to the Lifora/HealthCopilot repository root unless absolute.
+# Nothing in this file points at an alerting component. The Random Forest artifact
+# and feature CSV are referenced READ-ONLY.
+
+seed: 42
+
+paths:
+  dataset_root: datasets/sisfall/SisFall_dataset
+  # READ-ONLY. Only used (if present) to copy the subject ORDER so the subject split is
+  # identical to ml-model/fall_detection/train_fall_model.py. Never written.
+  rf_features_csv: datasets/sisfall/sisfall_features.csv
+  # READ-ONLY. Existing Random Forest package used by compare_models.py.
+  rf_model: ml-model/fall_detection/fall_detection_rf.joblib
+  # Windows prepared for the CNN-LSTM (raw sequences, not statistical features).
+  prepared_dir: datasets/sisfall/cnn_lstm_windows
+  # Everything the CNN-LSTM writes (checkpoint, history, plots, reports) lands here.
+  artifacts_dir: ml-model/fall_detection/research/cnn_lstm/artifacts
+
+data:
+  sampling_rate: 200          # Hz (SisFall)
+  window_seconds: 2
+  window_size: 400            # must equal sampling_rate * window_seconds (same as RF)
+  # SisFall columns: adxl_x,y,z (ADXL345), gyro_x,y,z (ITG3200), mma_x,y,z (MMA8451Q).
+  # Default = the 6 channels the RF's features are derived from. Add mma_* to try 9.
+  channels: [adxl_x, adxl_y, adxl_z, gyro_x, gyro_y, gyro_z]
+
+  # Participant-independent split. 6 + 6 held-out subjects of 38 and split_seed 42
+  # reproduce the Random Forest's split exactly (26 / 6 / 6).
+  n_val_subjects: 6
+  n_test_subjects: 6
+  split_seed: 42
+
+  # TRAIN split only (subject-disjoint from val/test, so overlap cannot leak):
+  train_adl_stride: 400                 # 400 = non-overlapping tiles (as RF). 200 = 50% overlap.
+  adl_max_windows_per_recording: null   # cap ADL windows per file to save memory (null = all)
+  fall_aug_crops: 8                     # extra impact-containing crops per fall recording (train only)
+  fall_aug_margin: 20                   # impact kept >= this many samples from window edges
+
+model:
+  conv_channels: [32, 64, 64]
+  kernel_sizes: [7, 5, 3]
+  pool_size: 2
+  lstm_hidden: 64
+  lstm_layers: 1
+  bidirectional: false
+  fc_hidden: 32
+  dropout: 0.3
+
+training:
+  device: cpu                 # "cpu" | "cuda" | "auto"
+  batch_size: 64
+  max_epochs: 40
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  use_pos_weight: true        # BCE pos_weight = n_adl / n_fall of the TRAIN windows
+  noise_std: 0.02             # Gaussian noise (in normalised units) added to TRAIN batches
+  early_stopping:
+    monitor: val_pr_auc       # "val_pr_auc" (maximise) or "val_loss" (minimise)
+    patience: 8
+    min_delta: 0.0005
+  num_threads: 0              # 0 = leave PyTorch default
+  num_workers: 0
+
+evaluation:
+  latency_runs: 200
+  latency_warmup: 20

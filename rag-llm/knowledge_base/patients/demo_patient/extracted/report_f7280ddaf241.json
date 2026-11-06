@@ -1,0 +1,14 @@
+{
+  "patient_id": "demo_patient",
+  "document_id": "f7280ddaf241a87f3c4cb84b8d4dd22c74c53980ec1e7f83473e0ff22d14a89c",
+  "original_filename": "demo_third_2026-10-15.pdf",
+  "stored_report": "report_f7280ddaf241.pdf",
+  "ingested_at": "2026-10-24T05:49:23.637059+00:00",
+  "page_count": 1,
+  "pages": [
+    {
+      "page": 1,
+      "text": "SYNTHETIC MEDICAL REPORT - TEST ONLY\n\nPatient: Demo Patient\n\nReport Date: 2026-10-15\n\nSymptoms: Dizziness and nausea.\n\nHeart Rate: 92 bpm\n\nSpO2: 97 percent\n\nTemperature: 37.1 C\n\nNote: This is fictional test data."
+    }
+  ]
+}

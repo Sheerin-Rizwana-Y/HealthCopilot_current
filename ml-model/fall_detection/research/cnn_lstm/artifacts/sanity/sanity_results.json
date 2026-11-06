@@ -1,0 +1,504 @@
+{
+  "per_activity": [
+    {
+      "activity": "D01",
+      "kind": "ADL",
+      "n_windows": 294,
+      "n_subjects": 6,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D02",
+      "kind": "ADL",
+      "n_windows": 299,
+      "n_subjects": 6,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D03",
+      "kind": "ADL",
+      "n_windows": 300,
+      "n_subjects": 6,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D04",
+      "kind": "ADL",
+      "n_windows": 250,
+      "n_subjects": 5,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D05",
+      "kind": "ADL",
+      "n_windows": 360,
+      "n_subjects": 6,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D06",
+      "kind": "ADL",
+      "n_windows": 180,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 8,
+      "Random Forest error rate": 0.044444444444444446
+    },
+    {
+      "activity": "D07",
+      "kind": "ADL",
+      "n_windows": 177,
+      "n_subjects": 6,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D08",
+      "kind": "ADL",
+      "n_windows": 180,
+      "n_subjects": 6,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D09",
+      "kind": "ADL",
+      "n_windows": 150,
+      "n_subjects": 5,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D10",
+      "kind": "ADL",
+      "n_windows": 149,
+      "n_subjects": 5,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 1,
+      "Random Forest error rate": 0.006711409395973154
+    },
+    {
+      "activity": "D11",
+      "kind": "ADL",
+      "n_windows": 176,
+      "n_subjects": 6,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 9,
+      "Random Forest error rate": 0.05113636363636364
+    },
+    {
+      "activity": "D12",
+      "kind": "ADL",
+      "n_windows": 180,
+      "n_subjects": 6,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D13",
+      "kind": "ADL",
+      "n_windows": 90,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 1,
+      "Random Forest error rate": 0.011111111111111112
+    },
+    {
+      "activity": "D14",
+      "kind": "ADL",
+      "n_windows": 179,
+      "n_subjects": 6,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D15",
+      "kind": "ADL",
+      "n_windows": 180,
+      "n_subjects": 6,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D16",
+      "kind": "ADL",
+      "n_windows": 173,
+      "n_subjects": 6,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D17",
+      "kind": "ADL",
+      "n_windows": 324,
+      "n_subjects": 6,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "D18",
+      "kind": "ADL",
+      "n_windows": 90,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 7,
+      "Random Forest error rate": 0.07777777777777778
+    },
+    {
+      "activity": "D19",
+      "kind": "ADL",
+      "n_windows": 90,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 2,
+      "Random Forest error rate": 0.022222222222222223
+    },
+    {
+      "activity": "F01",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "F02",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "F03",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "F04",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "F05",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "F06",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "F07",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "F08",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 1,
+      "Random Forest error rate": 0.06666666666666667
+    },
+    {
+      "activity": "F09",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "F10",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 1,
+      "Random Forest error rate": 0.06666666666666667
+    },
+    {
+      "activity": "F11",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "F12",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 0,
+      "Random Forest error rate": 0.0
+    },
+    {
+      "activity": "F13",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 1,
+      "CNN-LSTM error rate": 0.06666666666666667,
+      "Random Forest errors": 2,
+      "Random Forest error rate": 0.13333333333333333
+    },
+    {
+      "activity": "F14",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 2,
+      "Random Forest error rate": 0.13333333333333333
+    },
+    {
+      "activity": "F15",
+      "kind": "fall",
+      "n_windows": 15,
+      "n_subjects": 3,
+      "CNN-LSTM errors": 0,
+      "CNN-LSTM error rate": 0.0,
+      "Random Forest errors": 1,
+      "Random Forest error rate": 0.06666666666666667
+    }
+  ],
+  "single_feature": [
+    {
+      "feature": "acc_max",
+      "roc_auc": 0.9757341010206751,
+      "separability": 0.9757341010206751
+    },
+    {
+      "feature": "acc_range",
+      "roc_auc": 0.9725912355695135,
+      "separability": 0.9725912355695135
+    },
+    {
+      "feature": "gyro_std",
+      "roc_auc": 0.959860420483294,
+      "separability": 0.959860420483294
+    },
+    {
+      "feature": "gyro_max",
+      "roc_auc": 0.9562836953677049,
+      "separability": 0.9562836953677049
+    },
+    {
+      "feature": "acc_std",
+      "roc_auc": 0.8942336212160866,
+      "separability": 0.8942336212160866
+    },
+    {
+      "feature": "gyro_mean",
+      "roc_auc": 0.8553421152112594,
+      "separability": 0.8553421152112594
+    },
+    {
+      "feature": "acc_mean",
+      "roc_auc": 0.8190747041205038,
+      "separability": 0.8190747041205038
+    },
+    {
+      "feature": "acc_min",
+      "roc_auc": 0.18140277414289457,
+      "separability": 0.8185972258571055
+    }
+  ],
+  "non_impact": [
+    {
+      "position": "after_impact",
+      "n_windows": 743,
+      "CNN-LSTM flagged as fall": 16,
+      "CNN-LSTM flagged %": 2.1534320323014806,
+      "Random Forest flagged as fall": 7,
+      "Random Forest flagged %": 0.9421265141318977
+    },
+    {
+      "position": "before_impact",
+      "n_windows": 607,
+      "CNN-LSTM flagged as fall": 4,
+      "CNN-LSTM flagged %": 0.6589785831960461,
+      "Random Forest flagged as fall": 4,
+      "Random Forest flagged %": 0.6589785831960461
+    }
+  ],
+  "baselines": [
+    {
+      "run": "single feature: peak accelerometer magnitude",
+      "roc_auc": 0.9757341010206751,
+      "pr_auc": 0.8106789757725456,
+      "recall": 0.8266666666666667,
+      "specificity": 0.9578644333943994,
+      "f1": 0.6503496503496502
+    },
+    {
+      "run": "single feature: peak gyroscope magnitude",
+      "roc_auc": 0.9562836953677049,
+      "pr_auc": 0.4729365979001904,
+      "recall": 0.9333333333333333,
+      "specificity": 0.8979324784087935,
+      "f1": 0.5090909090909091
+    }
+  ],
+  "untrained": [
+    {
+      "run": "untrained_init_0",
+      "roc_auc": 0.17289307627439007,
+      "abs_auc_minus_half": 0.3271069237256099,
+      "pr_auc": 0.03158668632205037
+    },
+    {
+      "run": "untrained_init_1",
+      "roc_auc": 0.14650149757189798,
+      "abs_auc_minus_half": 0.353498502428102,
+      "pr_auc": 0.03589670774540393
+    },
+    {
+      "run": "untrained_init_2",
+      "roc_auc": 0.4660740353019861,
+      "abs_auc_minus_half": 0.0339259646980139,
+      "pr_auc": 0.11192932953478435
+    },
+    {
+      "run": "untrained_init_3",
+      "roc_auc": 0.5041617959231149,
+      "abs_auc_minus_half": 0.0041617959231149415,
+      "pr_auc": 0.1679817238459069
+    },
+    {
+      "run": "untrained_init_4",
+      "roc_auc": 0.3045020209950856,
+      "abs_auc_minus_half": 0.1954979790049144,
+      "pr_auc": 0.05395296472280272
+    }
+  ],
+  "shuffle": [
+    {
+      "run": "shuffled_labels_0",
+      "best_epoch": 4,
+      "threshold": 0.5016942024230957,
+      "recall": 0.9155555555555556,
+      "specificity": 0.3475529965977493,
+      "precision": 0.0763245646535754,
+      "f1": 0.1409028727770178,
+      "roc_auc": 0.6574259210794149,
+      "pr_auc": 0.07557466467247108,
+      "fp": 2493,
+      "fn": 19,
+      "n_fall": 225,
+      "n_adl": 3821,
+      "false_alarms_per_hour": 1174.4046061240513
+    },
+    {
+      "run": "shuffled_labels_1",
+      "best_epoch": 7,
+      "threshold": 0.5144873261451721,
+      "recall": 0.12444444444444444,
+      "specificity": 0.8332897147343628,
+      "precision": 0.042105263157894736,
+      "f1": 0.06292134831460675,
+      "roc_auc": 0.6138963040507138,
+      "pr_auc": 0.0670237951671384,
+      "fp": 637,
+      "fn": 197,
+      "n_fall": 225,
+      "n_adl": 3821,
+      "false_alarms_per_hour": 300.07851347814704
+    },
+    {
+      "run": "shuffled_labels_2",
+      "best_epoch": 5,
+      "threshold": 0.5050389766693115,
+      "recall": 0.5511111111111111,
+      "specificity": 0.5574456948442816,
+      "precision": 0.06831955922865014,
+      "f1": 0.1215686274509804,
+      "roc_auc": 0.6061316118526272,
+      "pr_auc": 0.27841743640178074,
+      "fp": 1691,
+      "fn": 101,
+      "n_fall": 225,
+      "n_adl": 3821,
+      "false_alarms_per_hour": 796.5977492802931
+    }
+  ]
+}

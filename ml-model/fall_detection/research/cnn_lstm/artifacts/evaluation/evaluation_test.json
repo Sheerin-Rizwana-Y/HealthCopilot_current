@@ -1,0 +1,36 @@
+{
+  "threshold": 0.9030670523643494,
+  "n": 4046,
+  "n_fall": 225,
+  "n_adl": 3821,
+  "tp": 224,
+  "tn": 3821,
+  "fp": 0,
+  "fn": 1,
+  "accuracy": 0.9997528423133959,
+  "precision": 1.0,
+  "recall": 0.9955555555555555,
+  "sensitivity": 0.9955555555555555,
+  "specificity": 1.0,
+  "false_positive_rate": 0.0,
+  "f1": 0.9977728285077951,
+  "roc_auc": 1.0,
+  "pr_auc": 1.0,
+  "false_alarms_per_hour": 0.0,
+  "confusion_matrix": [
+    [
+      3821,
+      0
+    ],
+    [
+      1,
+      224
+    ]
+  ],
+  "split": "test",
+  "model": "cnn_lstm",
+  "checkpoint_data_source": "sisfall",
+  "prepared_data_source": "sisfall",
+  "rf_identical_split": true,
+  "n_subjects": 6
+}
